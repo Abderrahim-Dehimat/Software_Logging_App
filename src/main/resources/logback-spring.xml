@@ -1,27 +1,29 @@
 <configuration>
     <!-- Console Appender -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <prettyPrint>true</prettyPrint>
+            <appendLineSeparator>true</appendLineSeparator>
         </encoder>
     </appender>
 
-    <!-- File Appender -->
+    <!-- File Appender for JSON logs -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>logs/application.log</file>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        <file>logs/application.json</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <prettyPrint>true</prettyPrint>
+            <appendLineSeparator>true</appendLineSeparator>
         </encoder>
     </appender>
 
-    <!-- Logger for the application package -->
-    <logger name="com.example.softwareloggingapp" level="TRACE" additivity="false">
+    <!-- Logger for your application -->
+    <logger name="com.example.softwareloggingapp" level="info" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </logger>
 
-    <!-- Root Logger for other libraries -->
-    <root level="INFO">
+    <!-- Root Logger -->
+    <root level="info">
         <appender-ref ref="CONSOLE" />
     </root>
 </configuration>

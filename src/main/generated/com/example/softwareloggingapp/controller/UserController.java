@@ -1,23 +1,23 @@
 package com.example.softwareloggingapp.controller;
-
 import com.example.softwareloggingapp.model.User;
 import com.example.softwareloggingapp.service.UserService;
+import java.util.List;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Map;
-
+// Annotation for SLF4J logger
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
-@Slf4j // Annotation for SLF4J logger
+@Slf4j
 public class UserController {
     private final UserService userService;
 
     @PostMapping("/createUser")
-    public User createUser(@RequestBody User user) {
+    public User createUser(@RequestBody
+    User user) {
+        log.info("WRITE operation performed by user: " + authenticatedUserEmail);
         log.info("Request to create user: {}", user);
         User createdUser = userService.createUser(user);
         log.info("User created successfully: {}", createdUser);
@@ -33,12 +33,11 @@ public class UserController {
     }
 
     @PostMapping("/authenticate")
-    public boolean authenticateUser(@RequestBody Map<String, String> credentials) {
+    public boolean authenticateUser(@RequestBody
+    Map<String, String> credentials) {
         String email = credentials.get("email");
         String password = credentials.get("password");
-
         log.info("Authentication attempt for email: {}", email);
         return userService.authenticate(email, password);
     }
-
 }

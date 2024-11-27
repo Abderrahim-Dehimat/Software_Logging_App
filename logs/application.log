@@ -141,3 +141,56 @@ Main Menu:
 2024-11-24 21:06:45 INFO  c.example.softwareloggingapp.cli.CLI - Fetching all products...
 2024-11-24 21:07:03 INFO  c.example.softwareloggingapp.cli.CLI - Request to delete a product
 2024-11-24 21:07:12 INFO  c.example.softwareloggingapp.cli.CLI - Product with ID 12 deleted successfully.
+2024-11-24 23:06:21 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 30912 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-24 23:06:21 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 23:06:21 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-24 23:06:22 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.182 seconds (process running for 1.473)
+2024-11-24 23:07:11 INFO  c.e.s.controller.UserController - Request to fetch all users.
+2024-11-24 23:07:11 INFO  c.e.s.controller.UserController - Total users fetched: 9
+2024-11-24 23:07:34 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 31475 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-24 23:07:34 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 23:07:34 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-24 23:07:35 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.139 seconds (process running for 1.492)
+2024-11-24 23:08:46 INFO  c.example.softwareloggingapp.cli.CLI - Fetching all users...
+2024-11-24 23:08:52 INFO  c.example.softwareloggingapp.cli.CLI - Fetching all products...
+2024-11-24 23:21:29 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 32319 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-24 23:21:29 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 23:21:29 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-24 23:21:30 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.111 seconds (process running for 1.474)
+2024-11-24 23:21:39 INFO  c.example.softwareloggingapp.cli.CLI - User abdou@gmail.com successfully logged in.
+2024-11-24 23:21:57 INFO  c.example.softwareloggingapp.cli.CLI - User abdou@gmail.com is viewing all products
+2024-11-24 23:22:17 INFO  c.example.softwareloggingapp.cli.CLI - User abdou@gmail.com is fetching product with ID 10
+2024-11-24 23:35:24 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 33175 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-24 23:35:24 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 23:35:24 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-24 23:35:25 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.141 seconds (process running for 1.477)
+2024-11-24 23:37:58 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 33459 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-24 23:37:58 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 23:37:58 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-24 23:37:59 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.151 seconds (process running for 1.535)
+2024-11-25 16:02:39 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 4294 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 16:02:39 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 16:02:39 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 16:02:40 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.452 seconds (process running for 1.875)
+2024-11-25 16:03:06 INFO  c.example.softwareloggingapp.cli.CLI - User abdou@gmail.com successfully logged in.
+2024-11-25 16:03:34 INFO  c.example.softwareloggingapp.cli.CLI - User abdou@gmail.com is viewing all products
+2024-11-25 19:01:31 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 7224 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 19:01:31 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 19:01:31 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 19:01:32 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.205 seconds (process running for 1.53)
+2024-11-25 19:13:58 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 8433 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 19:13:58 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 19:13:58 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 19:13:59 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.147 seconds (process running for 1.473)
+2024-11-25 19:15:55 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 8826 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 19:15:55 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 19:15:55 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 19:15:56 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.162 seconds (process running for 1.519)
+2024-11-25 19:45:03 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 10377 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 19:45:03 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 19:45:03 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 19:45:04 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.171 seconds (process running for 1.501)
+2024-11-25 19:45:23 INFO  c.e.s.SoftwareLoggingAppApplication - Starting SoftwareLoggingAppApplication using Java 23.0.1 with PID 10644 (/home/abderrahim/IdeaProjects/SoftwareLoggingApp/target/classes started by abderrahim in /home/abderrahim/IdeaProjects/SoftwareLoggingApp)
+2024-11-25 19:45:23 DEBUG c.e.s.SoftwareLoggingAppApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25 19:45:23 INFO  c.e.s.SoftwareLoggingAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 19:45:24 INFO  c.e.s.SoftwareLoggingAppApplication - Started SoftwareLoggingAppApplication in 1.122 seconds (process running for 1.436)

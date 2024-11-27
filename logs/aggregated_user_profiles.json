@@ -1,0 +1,18 @@
+{
+  "kaouther@gmail.com" : {
+    "email" : "kaouther@gmail.com",
+    "operationCounts" : {
+      "READ" : 1
+    },
+    "primaryOperation" : "READ"
+  },
+  "abdou@gmail.com" : {
+    "email" : "abdou@gmail.com",
+    "operationCounts" : {
+      "READ" : 24,
+      "MOST_EXPENSIVE_SEARCH" : 4,
+      "WRITE" : 13
+    },
+    "primaryOperation" : "READ"
+  }
+}

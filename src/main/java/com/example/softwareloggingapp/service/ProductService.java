@@ -2,6 +2,8 @@ package com.example.softwareloggingapp.service;
 
 import com.example.softwareloggingapp.model.Product;
 import com.example.softwareloggingapp.repository.ProductRepository;
+import io.opentelemetry.api.trace.Span;
+import io.opentelemetry.api.trace.Tracer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,59 +14,122 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductService {
     private final ProductRepository productRepository;
+    private final Tracer tracer;
+
+
 
     public Product addProduct(Product product) {
-//        if (productRepository.existsById(product.getId())) {
-//            throw new RuntimeException("Product with ID already exists!");
-//        }
-        return productRepository.save(product);
+        Span span = tracer.spanBuilder("addProduct").startSpan();
+        try {
+            return productRepository.save(product);
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
+        }
+
     }
 
     public Product getProductById(String id) {
-        return productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found!"));
+        Span span = tracer.spanBuilder("fetchProductById").startSpan();
+        try {
+            return productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found!"));
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
+        }
+
     }
 
     public void deleteProduct(String id) {
-        if (!productRepository.existsById(id)) {
-            throw new RuntimeException("Product not found!");
+        Span span = tracer.spanBuilder("deleteProduct").startSpan();
+        try {
+            if (!productRepository.existsById(id)) {
+                throw new RuntimeException("Product not found!");
+            }
+            productRepository.deleteById(id);
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
         }
-        productRepository.deleteById(id);
+
     }
 
     public Product updateProduct(Product product) {
-        if (!productRepository.existsById(product.getId())) {
-            throw new RuntimeException("Product not found!");
+        Span span = tracer.spanBuilder("fetchProductById").startSpan();
+        try {
+            if (!productRepository.existsById(product.getId())) {
+                throw new RuntimeException("Product not found!");
+            }
+            return productRepository.save(product);
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
         }
-        return productRepository.save(product);
+
     }
 
     public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        Span span = tracer.spanBuilder("displayAllProducts").startSpan();
+
+        try {
+            return productRepository.findAll();
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
+        }
+
+
     }
 
     public List<Product> getTopExpensiveProducts() {
-        // Retrieve all products from the repository
-        List<Product> allProducts = productRepository.findAll();
+        Span span = tracer.spanBuilder("getMostExpensiveProducts").startSpan();
+        try {
 
-        // Create a list to store the top 3 expensive products
-        List<Product> topExpensiveProducts = new ArrayList<>();
+            // Retrieve all products from the repository
+            List<Product> allProducts = productRepository.findAll();
 
-        // Iterate to find the top 3 most expensive products
-        for (Product product : allProducts) {
-            if (topExpensiveProducts.size() < 3) {
-                // Add products directly until we have 3 products
-                topExpensiveProducts.add(product);
-                // Sort the list in descending order of price
-                topExpensiveProducts.sort((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()));
-            } else if (product.getPrice() > topExpensiveProducts.get(2).getPrice()) {
-                // Replace the cheapest product in the top 3 if the current product is more expensive
-                topExpensiveProducts.set(2, product);
-                // Re-sort the list
-                topExpensiveProducts.sort((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()));
+            // Create a list to store the top 3 expensive products
+            List<Product> topExpensiveProducts = new ArrayList<>();
+
+            // Iterate to find the top 3 most expensive products
+            for (Product product : allProducts) {
+                if (topExpensiveProducts.size() < 3) {
+                    // Add products directly until we have 3 products
+                    topExpensiveProducts.add(product);
+                    // Sort the list in descending order of price
+                    topExpensiveProducts.sort((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()));
+                } else if (product.getPrice() > topExpensiveProducts.get(2).getPrice()) {
+                    // Replace the cheapest product in the top 3 if the current product is more expensive
+                    topExpensiveProducts.set(2, product);
+                    // Re-sort the list
+                    topExpensiveProducts.sort((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()));
+                }
             }
+
+            return topExpensiveProducts;
+
+        }catch (Exception e) {
+            span.recordException(e); // Enregistrer les erreurs dans la trace
+            throw e;
+        }finally {
+            span.end(); // Terminer la trace
         }
 
-        return topExpensiveProducts;
     }
 
 

@@ -11,36 +11,55 @@ import io.opentelemetry.semconv.resource.attributes.ResourceAttributes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Configuration class for OpenTelemetry integration.
+ * This class sets up tracing for the application using OpenTelemetry SDK
+ * and configures it to export tracing data to a Zipkin endpoint.
+ */
 @Configuration
 public class OpenTelemetryConfig {
 
+    /**
+     * Configures and provides an instance of OpenTelemetry.
+     * Sets up a Zipkin exporter, associates the tracing data with a resource name,
+     * and configures the SDK tracer provider.
+     *
+     * @return the configured OpenTelemetry instance.
+     */
     @Bean
     public OpenTelemetry openTelemetry() {
-        // Configure the Zipkin exporter
+        // Configure the Zipkin exporter with the specified endpoint
         ZipkinSpanExporter zipkinExporter = ZipkinSpanExporter.builder()
-                .setEndpoint("http://localhost:9414/api/v2/spans")
+                .setEndpoint("http://localhost:9414/api/v2/spans") // Replace with your Zipkin endpoint
                 .build();
 
-        // Define the service resource with the desired service name
+        // Define the resource with a service name for trace attribution
         Resource serviceResource = Resource.builder()
-                .put(ResourceAttributes.SERVICE_NAME, "ProfilingService")
+                .put(ResourceAttributes.SERVICE_NAME, "ProfilingService") // Service name for trace identification
                 .build();
 
-        // Configure the SDK Tracer Provider with the resource
+        // Configure the SDK tracer provider with the batch span processor and service resource
         SdkTracerProvider sdkTracerProvider = SdkTracerProvider.builder()
-                .addSpanProcessor(BatchSpanProcessor.builder(zipkinExporter).build())
-                .setResource(serviceResource)
+                .addSpanProcessor(BatchSpanProcessor.builder(zipkinExporter).build()) // Batch span processor for efficient export
+                .setResource(serviceResource) // Associate traces with the defined service resource
                 .build();
 
-        // Create and return the OpenTelemetry SDK instance
+        // Build and return the OpenTelemetry SDK instance
         return OpenTelemetrySdk.builder()
-                .setTracerProvider(sdkTracerProvider)
+                .setTracerProvider(sdkTracerProvider) // Attach the configured tracer provider
                 .build();
     }
 
+    /**
+     * Provides a Tracer bean for the application.
+     * The tracer is used to create and manage tracing spans for instrumentation.
+     *
+     * @param openTelemetry the OpenTelemetry instance to retrieve the tracer from.
+     * @return the configured Tracer instance.
+     */
     @Bean
     public Tracer tracer(OpenTelemetry openTelemetry) {
-        // Return the tracer for your application
-        return openTelemetry.getTracer("backend-tracer");
+        // Retrieve and return a tracer with a custom name
+        return openTelemetry.getTracer("backend-tracer"); // Identifier for tracing spans in the application
     }
 }

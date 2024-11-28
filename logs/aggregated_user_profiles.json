@@ -4,7 +4,7 @@
     "operationCounts" : {
       "READ" : 6,
       "MOST_EXPENSIVE_SEARCH" : 2,
-      "WRITE" : 3
+      "WRITE" : 5
     },
     "primaryOperation" : "READ"
   },
@@ -31,16 +31,16 @@
     "operationCounts" : {
       "READ" : 5,
       "MOST_EXPENSIVE_SEARCH" : 2,
-      "WRITE" : 4
+      "WRITE" : 5
     },
     "primaryOperation" : "READ"
   },
   "abdou@gmail.com" : {
     "email" : "abdou@gmail.com",
     "operationCounts" : {
-      "READ" : 28,
-      "MOST_EXPENSIVE_SEARCH" : 4,
-      "WRITE" : 14
+      "READ" : 29,
+      "MOST_EXPENSIVE_SEARCH" : 5,
+      "WRITE" : 19
     },
     "primaryOperation" : "READ"
   },
@@ -49,9 +49,9 @@
     "operationCounts" : {
       "READ" : 5,
       "MOST_EXPENSIVE_SEARCH" : 2,
-      "WRITE" : 4
+      "WRITE" : 6
     },
-    "primaryOperation" : "READ"
+    "primaryOperation" : "WRITE"
   },
   "salah@gmail.com" : {
     "email" : "salah@gmail.com",
@@ -67,9 +67,9 @@
     "operationCounts" : {
       "READ" : 5,
       "MOST_EXPENSIVE_SEARCH" : 3,
-      "WRITE" : 2
+      "WRITE" : 6
     },
-    "primaryOperation" : "READ"
+    "primaryOperation" : "WRITE"
   },
   "wassim@gmail.com" : {
     "email" : "wassim@gmail.com",
@@ -85,7 +85,7 @@
     "operationCounts" : {
       "READ" : 2,
       "MOST_EXPENSIVE_SEARCH" : 3,
-      "WRITE" : 6
+      "WRITE" : 7
     },
     "primaryOperation" : "WRITE"
   }

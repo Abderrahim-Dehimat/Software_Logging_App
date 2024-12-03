@@ -38,9 +38,9 @@
   "abdou@gmail.com" : {
     "email" : "abdou@gmail.com",
     "operationCounts" : {
-      "READ" : 29,
-      "MOST_EXPENSIVE_SEARCH" : 5,
-      "WRITE" : 19
+      "READ" : 45,
+      "MOST_EXPENSIVE_SEARCH" : 6,
+      "WRITE" : 21
     },
     "primaryOperation" : "READ"
   },

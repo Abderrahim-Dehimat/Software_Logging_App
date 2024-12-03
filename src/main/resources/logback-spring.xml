@@ -1,18 +1,68 @@
 <configuration>
     <!-- Console Appender -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-            <prettyPrint>true</prettyPrint>
-            <appendLineSeparator>true</appendLineSeparator>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <!-- Timestamp -->
+                <timestamp>
+                    <fieldName>@timestamp</fieldName>
+                </timestamp>
+                <!-- Message -->
+                <message />
+                <!-- Logger Name -->
+                <loggerName>
+                    <fieldName>logger_name</fieldName>
+                </loggerName>
+                <!-- Thread Name -->
+                <threadName>
+                    <fieldName>thread_name</fieldName>
+                </threadName>
+                <!-- Log Level -->
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <!-- Custom Field for User -->
+                <mdc>
+                    <fieldName>user</fieldName>
+                    <includeMdcKey>user</includeMdcKey>
+                </mdc>
+            </providers>
         </encoder>
     </appender>
 
     <!-- File Appender for JSON logs -->
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/application.json</file>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-            <prettyPrint>true</prettyPrint>
-            <appendLineSeparator>true</appendLineSeparator>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/application-%d{yyyy-MM-dd}.json</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <!-- Timestamp -->
+                <timestamp>
+                    <fieldName>@timestamp</fieldName>
+                </timestamp>
+                <!-- Message -->
+                <message />
+                <!-- Logger Name -->
+                <loggerName>
+                    <fieldName>logger_name</fieldName>
+                </loggerName>
+                <!-- Thread Name -->
+                <threadName>
+                    <fieldName>thread_name</fieldName>
+                </threadName>
+                <!-- Log Level -->
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <!-- Custom Field for User -->
+                <mdc>
+                    <fieldName>user</fieldName>
+                    <includeMdcKey>user</includeMdcKey>
+                </mdc>
+            </providers>
         </encoder>
     </appender>
 
@@ -25,5 +75,6 @@
     <!-- Root Logger -->
     <root level="info">
         <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
     </root>
 </configuration>

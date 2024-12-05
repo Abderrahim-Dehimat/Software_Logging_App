@@ -1,0 +1,289 @@
+{
+  "operation" : "MOST_EXPENSIVE_SEARCH",
+  "profiles" : [ {
+    "user" : "abdou@gmail.com",
+    "operationCount" : 6,
+    "operations" : [ {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T20:57:56.675008227+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T21:01:59.89915178+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:20:55.234985844+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:21:05.981963341+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:22:19.715833422+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:30:52.750494688+01:00",
+      "message" : "User abdou@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "johndoe@example.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:22:09.186188805+01:00",
+      "message" : "User johndoe@example.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:22:11.632292449+01:00",
+      "message" : "User johndoe@example.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:22:14.704062784+01:00",
+      "message" : "User johndoe@example.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:23:55.776504831+01:00",
+      "message" : "User johndoe@example.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "kaouther@gmail.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-04T21:00:45.258278937+01:00",
+      "message" : "User kaouther@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:24:49.604325878+01:00",
+      "message" : "User kaouther@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:27:16.845457049+01:00",
+      "message" : "User kaouther@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:29:40.795638957+01:00",
+      "message" : "User kaouther@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "yacine@gmail.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:57:09.041847332+01:00",
+      "message" : "User yacine@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:57:13.462488836+01:00",
+      "message" : "User yacine@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:58:18.863537231+01:00",
+      "message" : "User yacine@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:59:31.731782402+01:00",
+      "message" : "User yacine@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "wassim@gmail.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:00:46.518243659+01:00",
+      "message" : "User wassim@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:00:57.229752521+01:00",
+      "message" : "User wassim@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:03:36.393261772+01:00",
+      "message" : "User wassim@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:03:41.373307173+01:00",
+      "message" : "User wassim@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "aya@gmail.com",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:43:26.40513305+01:00",
+      "message" : "User aya@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:44:26.159383624+01:00",
+      "message" : "User aya@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:47:55.583489951+01:00",
+      "message" : "User aya@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "saida@gmail.com",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:06:58.933808024+01:00",
+      "message" : "User saida@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:07:04.216088346+01:00",
+      "message" : "User saida@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:10:00.318161214+01:00",
+      "message" : "User saida@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "salah@gmail.com",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:13:42.717249145+01:00",
+      "message" : "User salah@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:13:45.293696791+01:00",
+      "message" : "User salah@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:15:10.825654345+01:00",
+      "message" : "User salah@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "ayoub@gmail.com",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:33:36.721625574+01:00",
+      "message" : "User ayoub@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:37:17.283920268+01:00",
+      "message" : "User ayoub@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:38:03.749350469+01:00",
+      "message" : "User ayoub@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "kawthar@gmail.com",
+    "operationCount" : 1,
+    "operations" : [ {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:21:00.608693112+01:00",
+      "message" : "User kawthar@gmail.com searched for the most expensive products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    } ]
+  } ]
+}

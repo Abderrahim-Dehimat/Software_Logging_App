@@ -31,13 +31,11 @@
     </appender>
 
     <!-- File Appender for JSON logs -->
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>logs/application.json</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs/application-%d{yyyy-MM-dd}.json</fileNamePattern>
-            <maxHistory>30</maxHistory>
-        </rollingPolicy>
+        <append>true</append> <!-- Ensures logs are appended -->
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <prettyPrint>true</prettyPrint>
             <providers>
                 <!-- Timestamp -->
                 <timestamp>
@@ -75,6 +73,5 @@
     <!-- Root Logger -->
     <root level="info">
         <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
     </root>
 </configuration>

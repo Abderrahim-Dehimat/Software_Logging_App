@@ -1,0 +1,387 @@
+{
+  "operation" : "WRITE",
+  "profiles" : [ {
+    "user" : "aya@gmail.com",
+    "operationCount" : 7,
+    "operations" : [ {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:43:22.372824307+01:00",
+      "message" : "User aya@gmail.com performed WRITE operation: updating product Product(id=11, name=apple tv, price=1550.0, expirationDate=2035-11-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:44:20.845481662+01:00",
+      "message" : "User aya@gmail.com performed WRITE operation: updating product Product(id=7, name=iMac 24, price=1300.0, expirationDate=2030-12-29)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:45:18.479300883+01:00",
+      "message" : "User aya@gmail.com performed WRITE operation: updating product Product(id=9, name=Apple Pencil 2, price=129.0, expirationDate=2029-06-03)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:46:18.063334361+01:00",
+      "message" : "User aya@gmail.com performed WRITE operation: updating product Product(id=8, name=Mac Mini, price=699.0, expirationDate=2029-08-07)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:46:44.372808288+01:00",
+      "message" : "User aya@gmail.com performed WRITE operation: updating product Product(id=8, name=Mac Mini, price=699.0, expirationDate=2028-06-03)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:47:49.205510519+01:00",
+      "message" : "User aya@gmail.com performed DELETE operation: deleting product with ID 67478e8705f4561782978e3f",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "WARN"
+    }, {
+      "user" : "aya@gmail.com",
+      "@timestamp" : "2024-12-05T00:49:05.422826862+01:00",
+      "message" : "User aya@gmail.com performed DELETE operation: deleting product with ID 67478f1505f4561782978e41",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    } ]
+  }, {
+    "user" : "abdou@gmail.com",
+    "operationCount" : 6,
+    "operations" : [ {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T20:59:28.23450644+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6747994805f4561782978e4b, name=Redmi note 9, price=250.0, expirationDate=2025-02-13)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:18:12.808440345+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=Iphone 15, price=800.0, expirationDate=2029-11-05)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:19:08.598234376+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=iphone 16, price=1000.0, expirationDate=2030-02-05)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:19:40.598607267+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung Z Fold 1, price=650.0, expirationDate=2028-06-08)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:20:42.879150056+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6750e36c574e696e930951bf, name=iPhone 16, price=950.0, expirationDate=2030-08-09)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:53:17.876334209+01:00",
+      "message" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=4, name=Apple Watch Series 8, price=399.99, expirationDate=2027-09-10)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "ayoub@gmail.com",
+    "operationCount" : 6,
+    "operations" : [ {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:35:37.617005587+01:00",
+      "message" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=iPhone 14 pro, price=750.0, expirationDate=2030-08-04)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:36:12.775848685+01:00",
+      "message" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=iPhone 13 pro, price=590.0, expirationDate=2029-08-16)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:36:56.977414365+01:00",
+      "message" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=6750e749574e696e930951c2, name=iPhone 14 pro, price=755.0, expirationDate=2029-06-16)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:37:57.819075544+01:00",
+      "message" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=6747817392e11c7f1cf780ac, name=Apple Mac, price=1100.0, expirationDate=2030-12-12)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:40:01.859372421+01:00",
+      "message" : "User ayoub@gmail.com performed DELETE operation: deleting product with ID 6747948c05f4561782978e45",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "WARN"
+    }, {
+      "user" : "ayoub@gmail.com",
+      "@timestamp" : "2024-12-05T00:41:27.185807765+01:00",
+      "message" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=10, name=MagSafe Charger, price=40.0, expirationDate=2029-11-17)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "yacine@gmail.com",
+    "operationCount" : 5,
+    "operations" : [ {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:55:22.107370469+01:00",
+      "message" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=5, name=AirPods Pro 2, price=250.0, expirationDate=2026-06-07)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:56:18.508918583+01:00",
+      "message" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=3, name=iPad Air, price=600.0, expirationDate=2028-12-08)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:56:40.985876137+01:00",
+      "message" : "User yacine@gmail.com performed WRITE operation: adding product Product(id=null, name=Aipods 4, price=170.0, expirationDate=2027-08-07)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:57:05.202116742+01:00",
+      "message" : "User yacine@gmail.com performed DELETE operation: deleting product with ID 6747947505f4561782978e44",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    }, {
+      "user" : "yacine@gmail.com",
+      "@timestamp" : "2024-12-05T00:58:12.24021836+01:00",
+      "message" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=6, name=Apple TV 4K, price=1600.0, expirationDate=2033-12-18)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "kawthar@gmail.com",
+    "operationCount" : 5,
+    "operations" : [ {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:18:41.230274492+01:00",
+      "message" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung S9, price=100.0, expirationDate=2027-12-10)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:19:13.849952716+01:00",
+      "message" : "User kawthar@gmail.com performed DELETE operation: deleting product with ID 6750f161574e696e930951cd",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "WARN"
+    }, {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:19:36.160126435+01:00",
+      "message" : "User kawthar@gmail.com performed WRITE operation: updating product Product(id=6750f161574e696e930951cd, name=Samsung s9, price=100.0, expirationDate=2027-10-10)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:20:14.985750701+01:00",
+      "message" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung s9, price=100.0, expirationDate=2027-11-11)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "kawthar@gmail.com",
+      "@timestamp" : "2024-12-05T01:20:30.170911352+01:00",
+      "message" : "User kawthar@gmail.com performed DELETE operation: deleting product with ID 6750f1be574e696e930951ce",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "WARN"
+    } ]
+  }, {
+    "user" : "wassim@gmail.com",
+    "operationCount" : 5,
+    "operations" : [ {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:01:54.661212401+01:00",
+      "message" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=Condor P6 Pro, price=144.0, expirationDate=2027-12-17)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:02:25.434448881+01:00",
+      "message" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=sony Z2, price=550.0, expirationDate=2027-11-10)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:02:51.671295357+01:00",
+      "message" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=sony Z3, price=570.0, expirationDate=2027-11-15)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:03:13.097928633+01:00",
+      "message" : "User wassim@gmail.com performed DELETE operation: deleting product with ID 6750ed72574e696e930951c7",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "WARN"
+    }, {
+      "user" : "wassim@gmail.com",
+      "@timestamp" : "2024-12-05T01:05:40.269708278+01:00",
+      "message" : "User wassim@gmail.com performed WRITE operation: updating product Product(id=6750ed91574e696e930951c8, name=Sony Z2, price=560.0, expirationDate=2036-12-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "saida@gmail.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:08:02.263157951+01:00",
+      "message" : "User saida@gmail.com performed WRITE operation: updating product Product(id=88, name=redmi note 8, price=90.0, expirationDate=2027-10-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:09:10.536122416+01:00",
+      "message" : "User saida@gmail.com performed WRITE operation: adding product Product(id=null, name=Hwawei P30, price=60.0, expirationDate=2027-11-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:10:18.295153254+01:00",
+      "message" : "User saida@gmail.com performed DELETE operation: deleting product with ID 6747994805f4561782978e4b",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    }, {
+      "user" : "saida@gmail.com",
+      "@timestamp" : "2024-12-05T01:11:15.340692744+01:00",
+      "message" : "User saida@gmail.com performed WRITE operation: updating product Product(id=67479b0110e64050b380492d, name=Samsung TV 1, price=910.0, expirationDate=2028-02-22)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "johndoe@example.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:21:56.716075951+01:00",
+      "message" : "User johndoe@example.com performed DELETE operation: deleting product with ID 6",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:22:33.654368321+01:00",
+      "message" : "User johndoe@example.com performed WRITE operation: adding product Product(id=null, name=Samsung s10, price=170.0, expirationDate=2029-12-18)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:23:14.738643466+01:00",
+      "message" : "User johndoe@example.com performed WRITE operation: updating product Product(id=6750f249574e696e930951cf, name=Samsung S10, price=175.0, expirationDate=2027-11-18)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "johndoe@example.com",
+      "@timestamp" : "2024-12-05T01:23:49.752780859+01:00",
+      "message" : "User johndoe@example.com performed DELETE operation: deleting product with ID 6750ef26574e696e930951ca",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    } ]
+  }, {
+    "user" : "salah@gmail.com",
+    "operationCount" : 4,
+    "operations" : [ {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:14:20.710267018+01:00",
+      "message" : "User salah@gmail.com performed WRITE operation: adding product Product(id=null, name=Geant G2, price=70.0, expirationDate=2029-10-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:14:59.844967677+01:00",
+      "message" : "User salah@gmail.com performed DELETE operation: deleting product with ID 6750f05c574e696e930951cb",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "WARN"
+    }, {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:15:57.780685306+01:00",
+      "message" : "User salah@gmail.com performed WRITE operation: adding product Product(id=null, name=Geant G2, price=60.0, expirationDate=2026-10-14)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "salah@gmail.com",
+      "@timestamp" : "2024-12-05T01:16:21.777380925+01:00",
+      "message" : "User salah@gmail.com performed DELETE operation: deleting product with ID 6750f0bd574e696e930951cc",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "WARN"
+    } ]
+  }, {
+    "user" : "kaouther@gmail.com",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:25:27.057719954+01:00",
+      "message" : "User kaouther@gmail.com performed DELETE operation: deleting product with ID 674799db05f4561782978e4c",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "WARN"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:25:58.627235474+01:00",
+      "message" : "User kaouther@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung Z Fold 3, price=980.0, expirationDate=2030-11-15)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-05T00:26:55.450903742+01:00",
+      "message" : "User kaouther@gmail.com performed WRITE operation: updating product Product(id=6750e506574e696e930951c1, name=Samsung Z Fold 2, price=989.0, expirationDate=2029-12-30)",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  } ]
+}

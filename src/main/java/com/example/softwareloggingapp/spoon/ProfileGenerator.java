@@ -3,58 +3,57 @@ package com.example.softwareloggingapp.spoon;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * ProfileGenerator is responsible for aggregating user activity profiles from logs
- * and saving the results to a JSON file. It processes log entries to extract user
- * information and their associated operations, then creates aggregated profiles.
+ * and saving the results to separate JSON files for each operation type.
  */
 @Service
 public class ProfileGenerator {
 
-    // Path to the input log file containing user activity logs
-    private static final String INPUT_FILE_PATH = "logs/application.json";
-
-    // Path to the output JSON file to save aggregated user profiles
-    private static final String OUTPUT_FILE_PATH = "logs/aggregated_user_profiles.json";
-
-    // ObjectMapper for JSON parsing and writing
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private static final String INPUT_FILE_PATH = "logs/application.json"; // Input log file
+    private static final String OUTPUT_DIRECTORY = "logs/"; // Directory for output profiles
+    private static final ObjectMapper objectMapper = new ObjectMapper(); // JSON parser
 
     /**
-     * Reads the input log file, processes each log entry to aggregate user profiles,
-     * and writes the aggregated profiles to an output JSON file.
+     * Generates aggregated profiles for READ, WRITE, and MOST_EXPENSIVE_SEARCH operations.
+     * Profiles include detailed logs for each user and are saved to separate JSON files.
      */
     public void generateAggregatedProfiles() {
-        Map<String, UserProfile> userProfiles = new HashMap<>();
+        Map<String, List<Map<String, Object>>> readProfiles = new HashMap<>();
+        Map<String, List<Map<String, Object>>> writeProfiles = new HashMap<>();
+        Map<String, List<Map<String, Object>>> mostExpensiveSearchProfiles = new HashMap<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(INPUT_FILE_PATH))) {
-            String line;
+        try (Scanner scanner = new Scanner(new File(INPUT_FILE_PATH))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
 
-            // Process each log entry line by line
-            while ((line = br.readLine()) != null) {
                 try {
-                    // Parse the log entry as a generic JSON object (map)
                     Map<String, Object> logEntry = objectMapper.readValue(line, Map.class);
 
-                    // Extract user-specific information from the log message
                     String message = (String) logEntry.get("message");
                     if (message != null && message.contains("User")) {
                         String email = extractEmail(message);
                         String operation = extractOperation(message);
 
-                        // Only process valid operations (ignore "UNKNOWN")
-                        if (email != null && operation != null && !operation.equals("UNKNOWN")) {
-                            // Add or update the user's profile
-                            userProfiles.putIfAbsent(email, new UserProfile(email));
-                            UserProfile profile = userProfiles.get(email);
-                            profile.incrementOperation(operation);
+                        if (email != null && operation != null) {
+                            logEntry.put("user", email); // Add user info to log entry
+                            logEntry.remove("level_value"); // Remove unnecessary fields
+                            logEntry = reorderFields(logEntry); // Reorder fields
+
+                            if ("READ".equals(operation)) {
+                                readProfiles.putIfAbsent(email, new ArrayList<>());
+                                readProfiles.get(email).add(logEntry);
+                            } else if ("WRITE".equals(operation)) {
+                                writeProfiles.putIfAbsent(email, new ArrayList<>());
+                                writeProfiles.get(email).add(logEntry);
+                            } else if ("MOST_EXPENSIVE_SEARCH".equals(operation)) {
+                                mostExpensiveSearchProfiles.putIfAbsent(email, new ArrayList<>());
+                                mostExpensiveSearchProfiles.get(email).add(logEntry);
+                            }
                         }
                     }
                 } catch (Exception e) {
@@ -62,21 +61,40 @@ public class ProfileGenerator {
                 }
             }
 
-            // Write the aggregated user profiles to a JSON file
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(OUTPUT_FILE_PATH), userProfiles);
-            System.out.println("\nAggregated user profiles have been saved to: " + OUTPUT_FILE_PATH);
+            saveProfiles("READ", readProfiles);
+            saveProfiles("WRITE", writeProfiles);
+            saveProfiles("MOST_EXPENSIVE_SEARCH", mostExpensiveSearchProfiles);
 
         } catch (IOException e) {
-            System.err.println("Error processing the file: " + e.getMessage());
+            System.err.println("Error reading the log file: " + e.getMessage());
         }
     }
 
-    /**
-     * Extracts the email address from a log message.
-     *
-     * @param message The log message containing the user email.
-     * @return The extracted email address, or null if not found.
-     */
+    private void saveProfiles(String operationType, Map<String, List<Map<String, Object>>> profiles) {
+        List<Map<String, Object>> formattedProfiles = new ArrayList<>();
+
+        profiles.entrySet().stream()
+                .sorted((e1, e2) -> Integer.compare(e2.getValue().size(), e1.getValue().size())) // Sort by operation count
+                .forEach(entry -> {
+                    Map<String, Object> userProfile = new LinkedHashMap<>(); // Use LinkedHashMap for field order
+                    userProfile.put("user", entry.getKey());
+                    userProfile.put("operationCount", entry.getValue().size());
+                    userProfile.put("operations", entry.getValue());
+                    formattedProfiles.add(userProfile);
+                });
+
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("operation", operationType);
+        result.put("profiles", formattedProfiles);
+
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter()
+                    .writeValue(new File(OUTPUT_DIRECTORY + operationType.toLowerCase() + "_profiles.json"), result);
+        } catch (IOException e) {
+            System.err.println("Error writing profiles to file: " + e.getMessage());
+        }
+    }
+
     private String extractEmail(String message) {
         int startIndex = message.indexOf("User ");
         int endIndex = message.indexOf(" ", startIndex + 5);
@@ -86,71 +104,25 @@ public class ProfileGenerator {
         return null;
     }
 
-    /**
-     * Determines the type of operation performed based on the log message.
-     *
-     * @param message The log message containing operation details.
-     * @return The operation type (e.g., "READ", "WRITE", "MOST_EXPENSIVE_SEARCH", or "UNKNOWN").
-     */
     private String extractOperation(String message) {
-        if (message.contains("SEARCH") || message.contains("viewing") || message.contains("fetching")) {
+        if (message.contains("READ operation")) {
             return "READ";
-        } else if (message.contains("WRITE") || message.contains("adding a new product") || message.contains("updated") || message.contains("DELETE")) {
+        } else if (message.contains("WRITE operation") || message.contains("DELETE operation")) {
             return "WRITE";
         } else if (message.contains("searched for the most expensive products")) {
             return "MOST_EXPENSIVE_SEARCH";
         }
-        return "UNKNOWN";
+        return null;
     }
 
-    /**
-     * Represents a user profile containing aggregated data about the user's operations.
-     */
-    static class UserProfile {
-        private String email; // The email of the user
-        private Map<String, Integer> operationCounts = new HashMap<>(); // Counts of each operation type
-        private String primaryOperation; // The most frequent operation performed by the user
-
-        /**
-         * Constructs a new UserProfile for the given email.
-         *
-         * @param email The email of the user.
-         */
-        public UserProfile(String email) {
-            this.email = email;
-        }
-
-        /**
-         * Increments the count of the specified operation and updates the primary operation.
-         *
-         * @param operation The operation type to increment.
-         */
-        public void incrementOperation(String operation) {
-            operationCounts.put(operation, operationCounts.getOrDefault(operation, 0) + 1);
-            updatePrimaryOperation();
-        }
-
-        /**
-         * Updates the primary operation to the one with the highest count.
-         */
-        private void updatePrimaryOperation() {
-            primaryOperation = operationCounts.entrySet().stream()
-                    .max(Map.Entry.comparingByValue())
-                    .map(Map.Entry::getKey)
-                    .orElse(null);
-        }
-
-        // Getters for the user profile properties
-        public String getEmail() {
-            return email;
-        }
-
-        public Map<String, Integer> getOperationCounts() {
-            return operationCounts;
-        }
-
-        public String getPrimaryOperation() {
-            return primaryOperation;
-        }
+    private Map<String, Object> reorderFields(Map<String, Object> logEntry) {
+        Map<String, Object> reorderedLog = new LinkedHashMap<>();
+        reorderedLog.put("user", logEntry.get("user")); // Move user to the top
+        reorderedLog.put("@timestamp", logEntry.get("@timestamp"));
+        reorderedLog.put("message", logEntry.get("message"));
+        reorderedLog.put("logger_name", logEntry.get("logger_name"));
+        reorderedLog.put("thread_name", logEntry.get("thread_name"));
+        reorderedLog.put("level", logEntry.get("level"));
+        return reorderedLog;
     }
 }

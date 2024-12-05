@@ -1,629 +1,995 @@
-[ {
-  "email" : "aya@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T22:42:19.249167714+01:00",
-    "event" : "WRITE",
-    "action" : "User aya@gmail.com performed WRITE operation: adding product Product(id=null, name=speaker, price=120.0, expirationDate=2027-10-10)"
-  }, {
-    "timestamp" : "2024-11-27T22:44:53.240710924+01:00",
-    "event" : "WRITE",
-    "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=6747923b05f4561782978e42, name=speaker, price=132.0, expirationDate=2027-10-10)"
-  }, {
-    "timestamp" : "2024-11-27T22:45:53.858626075+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T22:46:01.768586394+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching product with ID 6"
-  }, {
-    "timestamp" : "2024-11-27T22:46:23.525720212+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching product with ID 7"
-  }, {
-    "timestamp" : "2024-11-27T22:46:37.042170679+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching product with ID 2"
-  }, {
-    "timestamp" : "2024-11-27T22:46:55.610043927+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User aya@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:47:47.278532463+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User aya@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:48:21.810759767+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T22:49:03.273012848+01:00",
-    "event" : "WRITE",
-    "action" : "User aya@gmail.com performed WRITE operation: adding product Product(id=null, name=airpods 4, price=140.0, expirationDate=2030-11-14)"
-  }, {
-    "timestamp" : "2024-11-27T22:49:08.78398508+01:00",
-    "event" : "READ",
-    "action" : "User aya@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 6,
-    "MOST_EXPENSIVE_SEARCH" : 2,
-    "WRITE" : 3
-  }
-}, {
-  "email" : "saida@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T23:06:36.991728584+01:00",
-    "event" : "WRITE",
-    "action" : "User saida@gmail.com performed WRITE operation: adding product Product(id=null, name=iphone 13, price=500.0, expirationDate=2027-11-25)"
-  }, {
-    "timestamp" : "2024-11-27T23:07:05.970436303+01:00",
-    "event" : "WRITE",
-    "action" : "User saida@gmail.com performed WRITE operation: adding product Product(id=null, name=iphone 12, price=400.0, expirationDate=2027-09-27)"
-  }, {
-    "timestamp" : "2024-11-27T23:07:14.587472818+01:00",
-    "event" : "READ",
-    "action" : "User saida@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:07:52.701723879+01:00",
-    "event" : "READ",
-    "action" : "User saida@gmail.com performed READ operation: fetching product with ID 674797ec05f4561782978e49"
-  }, {
-    "timestamp" : "2024-11-27T23:08:20.021213247+01:00",
-    "event" : "READ",
-    "action" : "User saida@gmail.com performed READ operation: fetching product with ID 6747980905f4561782978e4a"
-  }, {
-    "timestamp" : "2024-11-27T23:09:11.573120779+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User saida@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:09:51.462423219+01:00",
-    "event" : "WRITE",
-    "action" : "User saida@gmail.com performed WRITE operation: updating product Product(id=11, name=apple tv, price=1500.0, expirationDate=15-11-2026)"
-  }, {
-    "timestamp" : "2024-11-27T23:11:34.081176186+01:00",
-    "event" : "WRITE",
-    "action" : "User saida@gmail.com performed WRITE operation: updating product Product(id=88, name=redmi note 8, price=100.0, expirationDate=2026-01-05)"
-  }, {
-    "timestamp" : "2024-11-27T23:11:41.562968097+01:00",
-    "event" : "READ",
-    "action" : "User saida@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:12:24.568100641+01:00",
-    "event" : "WRITE",
-    "action" : "User saida@gmail.com performed WRITE operation: adding product Product(id=null, name=redmi note 9, price=200.0, expirationDate=2027-01-05)"
-  } ],
-  "summary" : {
-    "READ" : 4,
-    "MOST_EXPENSIVE_SEARCH" : 1,
-    "WRITE" : 5
-  }
-}, {
-  "email" : "johndoe@example.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T23:25:43.556229237+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:25:49.23987542+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching product with ID 2"
-  }, {
-    "timestamp" : "2024-11-27T23:25:55.22643455+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching product with ID 5"
-  }, {
-    "timestamp" : "2024-11-27T23:25:57.866821529+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User johndoe@example.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:26:12.98753254+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching product with ID 4"
-  }, {
-    "timestamp" : "2024-11-27T23:26:34.541278669+01:00",
-    "event" : "WRITE",
-    "action" : "User johndoe@example.com performed WRITE operation: adding product Product(id=null, name=samsung tv 2, price=1020.0, expirationDate=2029-11-19)"
-  }, {
-    "timestamp" : "2024-11-27T23:26:39.989150193+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User johndoe@example.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:27:02.403883286+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User johndoe@example.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:27:17.324800883+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching product with ID 10"
-  }, {
-    "timestamp" : "2024-11-27T23:27:21.393436052+01:00",
-    "event" : "READ",
-    "action" : "User johndoe@example.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 6,
-    "MOST_EXPENSIVE_SEARCH" : 3,
-    "WRITE" : 1
-  }
-}, {
-  "email" : "kaouther@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T16:34:01.274332604+01:00",
-    "event" : "READ",
-    "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T21:30:43.313654934+01:00",
-    "event" : "WRITE",
-    "action" : "User kaouther@gmail.com performed WRITE operation: adding product Product(id=null, name=laptop, price=1500.0, expirationDate=2025-12-31)"
-  }, {
-    "timestamp" : "2024-11-27T21:33:39.766862187+01:00",
-    "event" : "WRITE",
-    "action" : "User kaouther@gmail.com performed WRITE operation: adding product Product(id=null, name=smartphone, price=1000.0, expirationDate=2026-06-30)"
-  }, {
-    "timestamp" : "2024-11-27T21:34:30.408931945+01:00",
-    "event" : "WRITE",
-    "action" : "User kaouther@gmail.com performed WRITE operation: adding product Product(id=null, name=tablet, price=750.0, expirationDate=2025-11-15)"
-  }, {
-    "timestamp" : "2024-11-27T22:12:39.479866062+01:00",
-    "event" : "WRITE",
-    "action" : "User kaouther@gmail.com performed WRITE operation: updating product Product(id=6747817392e11c7f1cf780ac, name=laptop, price=1650.0, expirationDate=2025-12-31)"
-  }, {
-    "timestamp" : "2024-11-27T22:13:23.121339391+01:00",
-    "event" : "READ",
-    "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T22:13:54.642641359+01:00",
-    "event" : "READ",
-    "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 6747822392e11c7f1cf780ad"
-  }, {
-    "timestamp" : "2024-11-27T22:14:30.130391958+01:00",
-    "event" : "READ",
-    "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 6747817392e11c7f1cf780ac"
-  }, {
-    "timestamp" : "2024-11-27T22:14:43.542690539+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User kaouther@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:16:04.276617776+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User kaouther@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:16:26.637044456+01:00",
-    "event" : "READ",
-    "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 5,
-    "MOST_EXPENSIVE_SEARCH" : 2,
-    "WRITE" : 4
-  }
-}, {
-  "email" : "abdou@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-25T23:41:49.450788217+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com is fetching product with ID 5"
-  }, {
-    "timestamp" : "2024-11-25T23:49:51.399059324+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com is adding a new product: Product(id=88, name=test, price=14.0, expirationDate=2022-11-11)"
-  }, {
-    "timestamp" : "2024-11-27T14:48:21.154451535+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User abdou@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T16:29:02.454815613+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T16:30:06.214472488+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 5"
-  }, {
-    "timestamp" : "2024-11-27T16:31:55.262963919+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User abdou@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T16:45:42.695077174+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=test, price=140.0, expirationDate=null)"
-  }, {
-    "timestamp" : "2024-11-27T16:46:16.580545967+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=15, name=test, price=150.0, expirationDate=null)"
-  }, {
-    "timestamp" : "2024-11-27T16:47:04.962673731+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T16:51:07.770398704+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=17, name=tt, price=14.0, expirationDate=2022-11-14)"
-  }, {
-    "timestamp" : "2024-11-27T16:51:15.855878633+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:11:34.683698276+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=ttt, price=14.0, expirationDate=2022-02-02)"
-  }, {
-    "timestamp" : "2024-11-27T18:13:33.98623101+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=ttt, price=14.0, expirationDate=2022-02-02)"
-  }, {
-    "timestamp" : "2024-11-27T18:13:48.733075785+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:18:50.287751827+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=eee, price=11.0, expirationDate=2024-04-04)"
-  }, {
-    "timestamp" : "2024-11-27T18:19:06.522106+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:19:43.846032691+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=jjj, price=15.0, expirationDate=2025-11-14)"
-  }, {
-    "timestamp" : "2024-11-27T18:20:21.227246972+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:20:42.752108559+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:22:39.049323702+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=kkk, price=15.0, expirationDate=2022-12-18)"
-  }, {
-    "timestamp" : "2024-11-27T18:22:46.464795897+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:23:09.130772838+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 6747555f595cc71e0a9a7628"
-  }, {
-    "timestamp" : "2024-11-27T18:23:25.198989112+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6747555f595cc71e0a9a7628, name=uuu, price=100.0, expirationDate=null)"
-  }, {
-    "timestamp" : "2024-11-27T18:23:29.586701727+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:25:04.29976985+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:25:36.021238509+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6747555f595cc71e0a9a7628, name=yyy, price=145.0, expirationDate=2022-02-04)"
-  }, {
-    "timestamp" : "2024-11-27T18:25:42.68517503+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:26:13.825237806+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T18:26:33.121292012+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User abdou@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T18:30:42.24726858+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User abdou@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T19:16:00.646606169+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=test, price=140.0, expirationDate=2022-04-14)"
-  }, {
-    "timestamp" : "2024-11-27T19:17:03.3979633+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T19:19:59.469976206+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T19:20:32.392024307+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T19:20:58.087295072+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T19:24:30.057644289+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T19:25:09.425534482+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=ttt, price=44.0, expirationDate=2022-10-14)"
-  }, {
-    "timestamp" : "2024-11-27T20:28:50.742691805+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T20:43:18.55758599+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 4"
-  }, {
-    "timestamp" : "2024-11-27T20:43:59.10642021+01:00",
-    "event" : "WRITE",
-    "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=kaw, price=200.0, expirationDate=2022-11-19)"
-  }, {
-    "timestamp" : "2024-11-27T20:44:16.932551995+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T20:47:10.329986918+01:00",
-    "event" : "READ",
-    "action" : "User abdou@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 24,
-    "MOST_EXPENSIVE_SEARCH" : 4,
-    "WRITE" : 14
-  }
-}, {
-  "email" : "yacine@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T22:51:49.617742078+01:00",
-    "event" : "WRITE",
-    "action" : "User yacine@gmail.com performed WRITE operation: adding product Product(id=null, name=webcam, price=80.0, expirationDate=2027-03-28)"
-  }, {
-    "timestamp" : "2024-11-27T22:52:12.020095056+01:00",
-    "event" : "WRITE",
-    "action" : "User yacine@gmail.com performed WRITE operation: adding product Product(id=null, name=router, price=250.0, expirationDate=2026-12-20)"
-  }, {
-    "timestamp" : "2024-11-27T22:53:19.313975514+01:00",
-    "event" : "WRITE",
-    "action" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=67478f1505f4561782978e41, name=headphones, price=250.0, expirationDate=2026-06-15)"
-  }, {
-    "timestamp" : "2024-11-27T22:55:27.674582475+01:00",
-    "event" : "READ",
-    "action" : "User yacine@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T22:55:41.261812367+01:00",
-    "event" : "READ",
-    "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 9"
-  }, {
-    "timestamp" : "2024-11-27T22:55:49.695154654+01:00",
-    "event" : "READ",
-    "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 1"
-  }, {
-    "timestamp" : "2024-11-27T22:56:05.341255362+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User yacine@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:56:34.258035142+01:00",
-    "event" : "READ",
-    "action" : "User yacine@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T22:56:40.76467446+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User yacine@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:57:20.59625358+01:00",
-    "event" : "WRITE",
-    "action" : "User yacine@gmail.com performed WRITE operation: adding product Product(id=null, name=samsung s23, price=900.0, expirationDate=2028-12-01)"
-  }, {
-    "timestamp" : "2024-11-27T22:57:38.523859351+01:00",
-    "event" : "READ",
-    "action" : "User yacine@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 5,
-    "MOST_EXPENSIVE_SEARCH" : 2,
-    "WRITE" : 4
-  }
-}, {
-  "email" : "salah@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T23:13:35.582538275+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User salah@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:13:42.667853294+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User salah@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:13:47.683457173+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User salah@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:13:50.396866206+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User salah@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:14:05.875074785+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User salah@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:14:18.447744623+01:00",
-    "event" : "READ",
-    "action" : "User salah@gmail.com performed READ operation: fetching product with ID 2"
-  }, {
-    "timestamp" : "2024-11-27T23:14:28.093475795+01:00",
-    "event" : "READ",
-    "action" : "User salah@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:14:51.437830023+01:00",
-    "event" : "WRITE",
-    "action" : "User salah@gmail.com performed WRITE operation: adding product Product(id=null, name=iphone 6, price=50.0, expirationDate=2027-11-14)"
-  }, {
-    "timestamp" : "2024-11-27T23:16:31.195417668+01:00",
-    "event" : "WRITE",
-    "action" : "User salah@gmail.com performed WRITE operation: updating product Product(id=15, name=samsung s10, price=290.0, expirationDate=2027-08-12)"
-  }, {
-    "timestamp" : "2024-11-27T23:16:38.795609392+01:00",
-    "event" : "READ",
-    "action" : "User salah@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "MOST_EXPENSIVE_SEARCH" : 5,
-    "READ" : 3,
-    "WRITE" : 2
-  }
-}, {
-  "email" : "kawthar@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T23:18:53.461003404+01:00",
-    "event" : "READ",
-    "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:18:55.787992793+01:00",
-    "event" : "READ",
-    "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:18:58.062010275+01:00",
-    "event" : "READ",
-    "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:19:11.93788806+01:00",
-    "event" : "READ",
-    "action" : "User kawthar@gmail.com performed READ operation: fetching product with ID 1"
-  }, {
-    "timestamp" : "2024-11-27T23:19:45.165813946+01:00",
-    "event" : "WRITE",
-    "action" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=samsung tv, price=990.0, expirationDate=2029-05-14)"
-  }, {
-    "timestamp" : "2024-11-27T23:19:50.655913458+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User kawthar@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:23:42.124324805+01:00",
-    "event" : "READ",
-    "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:24:26.911933218+01:00",
-    "event" : "WRITE",
-    "action" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=condor p6, price=120.0, expirationDate=2026-10-18)"
-  }, {
-    "timestamp" : "2024-11-27T23:24:44.003546975+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User kawthar@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T23:24:47.605325324+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User kawthar@gmail.com searched for the most expensive products"
-  } ],
-  "summary" : {
-    "READ" : 5,
-    "MOST_EXPENSIVE_SEARCH" : 3,
-    "WRITE" : 2
-  }
-}, {
-  "email" : "wassim@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T22:59:44.928358321+01:00",
-    "event" : "WRITE",
-    "action" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=samsung s22, price=700.0, expirationDate=2027-05-07)"
-  }, {
-    "timestamp" : "2024-11-27T23:00:31.15373125+01:00",
-    "event" : "WRITE",
-    "action" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=samsung s21, price=600.0, expirationDate=2028-11-09)"
-  }, {
-    "timestamp" : "2024-11-27T23:00:41.621510785+01:00",
-    "event" : "READ",
-    "action" : "User wassim@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:00:51.733447548+01:00",
-    "event" : "READ",
-    "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 11"
-  }, {
-    "timestamp" : "2024-11-27T23:01:20.046190556+01:00",
-    "event" : "READ",
-    "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 6747822392e11c7f1cf780ad"
-  }, {
-    "timestamp" : "2024-11-27T23:02:16.999274923+01:00",
-    "event" : "WRITE",
-    "action" : "User wassim@gmail.com performed WRITE operation: updating product Product(id=1, name=iPhone 14 Pro, price=1000.0, expirationDate=2029-12-30)"
-  }, {
-    "timestamp" : "2024-11-27T23:02:24.519254519+01:00",
-    "event" : "READ",
-    "action" : "User wassim@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:03:06.872913881+01:00",
-    "event" : "WRITE",
-    "action" : "User wassim@gmail.com performed WRITE operation: updating product Product(id=14, name=television, price=150.0, expirationDate=2029-08-04)"
-  }, {
-    "timestamp" : "2024-11-27T23:04:25.705590692+01:00",
-    "event" : "WRITE",
-    "action" : "User wassim@gmail.com performed WRITE operation: updating product Product(id=2, name=MacBook Pro 16, price=2400.0, expirationDate=2027-12-30)"
-  }, {
-    "timestamp" : "2024-11-27T23:04:31.549143595+01:00",
-    "event" : "READ",
-    "action" : "User wassim@gmail.com performed READ operation: fetching all products"
-  }, {
-    "timestamp" : "2024-11-27T23:04:40.582168867+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User wassim@gmail.com searched for the most expensive products"
-  } ],
-  "summary" : {
-    "READ" : 5,
-    "MOST_EXPENSIVE_SEARCH" : 1,
-    "WRITE" : 5
-  }
-}, {
-  "email" : "ayoub@gmail.com",
-  "activities" : [ {
-    "timestamp" : "2024-11-27T22:25:48.552250536+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=monitor, price=300.0, expirationDate=2027-01-01)"
-  }, {
-    "timestamp" : "2024-11-27T22:26:31.650054865+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=keyboard, price=50.0, expirationDate=2028-12-31)"
-  }, {
-    "timestamp" : "2024-11-27T22:27:53.534262414+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=mouse, price=25.0, expirationDate=2028-12-30)"
-  }, {
-    "timestamp" : "2024-11-27T22:28:53.644415032+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=headphones, price=200.0, expirationDate=2026-06-15)"
-  }, {
-    "timestamp" : "2024-11-27T22:30:29.637146899+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=67478e8705f4561782978e3f, name=keyboard, price=45.0, expirationDate=2028-12-31)"
-  }, {
-    "timestamp" : "2024-11-27T22:34:13.533139386+01:00",
-    "event" : "WRITE",
-    "action" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=67478ed905f4561782978e40, name=mouse, price=45.0, expirationDate=2028-12-31)"
-  }, {
-    "timestamp" : "2024-11-27T22:36:13.851253924+01:00",
-    "event" : "READ",
-    "action" : "User ayoub@gmail.com performed READ operation: fetching product with ID 67478f1505f4561782978e41"
-  }, {
-    "timestamp" : "2024-11-27T22:36:40.762213642+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User ayoub@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:36:59.207900792+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User ayoub@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:37:08.469155055+01:00",
-    "event" : "MOST_EXPENSIVE_SEARCH",
-    "action" : "User ayoub@gmail.com searched for the most expensive products"
-  }, {
-    "timestamp" : "2024-11-27T22:37:32.320197372+01:00",
-    "event" : "READ",
-    "action" : "User ayoub@gmail.com performed READ operation: fetching all products"
-  } ],
-  "summary" : {
-    "READ" : 2,
-    "MOST_EXPENSIVE_SEARCH" : 3,
-    "WRITE" : 6
-  }
-} ]
+{
+  "profiles" : [ {
+    "user" : "abdou@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-04T20:54:23.051976287+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-04T20:55:23.663321825+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-04T20:55:38.680422312+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 5"
+        }, {
+          "timestamp" : "2024-12-04T21:18:35.037774694+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-04T21:19:06.364136668+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 6"
+        }, {
+          "timestamp" : "2024-12-05T00:19:45.46527216+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:20:01.576648007+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 6750e36c574e696e930951bf"
+        }, {
+          "timestamp" : "2024-12-05T00:21:59.578396188+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 10"
+        }, {
+          "timestamp" : "2024-12-05T00:22:05.046600282+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 11"
+        }, {
+          "timestamp" : "2024-12-05T00:22:45.145349285+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching product with ID 14"
+        }, {
+          "timestamp" : "2024-12-05T00:52:46.184011665+01:00",
+          "event" : "READ",
+          "action" : "User abdou@gmail.com performed READ operation: fetching all products"
+        } ],
+        "operationCount" : 11
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-04T20:57:56.675008227+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-04T21:01:59.89915178+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:20:55.234985844+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:21:05.981963341+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:22:19.715833422+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:30:52.750494688+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User abdou@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 6
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-04T20:59:28.23450644+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6747994805f4561782978e4b, name=Redmi note 9, price=250.0, expirationDate=2025-02-13)"
+        }, {
+          "timestamp" : "2024-12-05T00:18:12.808440345+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=Iphone 15, price=800.0, expirationDate=2029-11-05)"
+        }, {
+          "timestamp" : "2024-12-05T00:19:08.598234376+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=iphone 16, price=1000.0, expirationDate=2030-02-05)"
+        }, {
+          "timestamp" : "2024-12-05T00:19:40.598607267+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung Z Fold 1, price=650.0, expirationDate=2028-06-08)"
+        }, {
+          "timestamp" : "2024-12-05T00:20:42.879150056+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=6750e36c574e696e930951bf, name=iPhone 16, price=950.0, expirationDate=2030-08-09)"
+        }, {
+          "timestamp" : "2024-12-05T00:53:17.876334209+01:00",
+          "event" : "WRITE",
+          "action" : "User abdou@gmail.com performed WRITE operation: updating product Product(id=4, name=Apple Watch Series 8, price=399.99, expirationDate=2027-09-10)"
+        } ],
+        "operationCount" : 6
+      }
+    },
+    "summary" : {
+      "READ" : 11,
+      "MOST_EXPENSIVE_SEARCH" : 6,
+      "WRITE" : 6
+    },
+    "totalOperationCount" : 23
+  }, {
+    "user" : "kaouther@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-04T20:53:07.202746418+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-04T21:00:36.548892188+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-04T21:00:59.869209682+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 10"
+        }, {
+          "timestamp" : "2024-12-04T21:01:11.616398018+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:24:37.052788906+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:24:41.484918102+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 10"
+        }, {
+          "timestamp" : "2024-12-05T00:24:58.733446503+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 5"
+        }, {
+          "timestamp" : "2024-12-05T00:25:09.694633316+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:26:07.124864272+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:26:23.662595798+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 6750e506574e696e930951c1"
+        }, {
+          "timestamp" : "2024-12-05T00:27:04.90529409+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 6750e506574e696e930951c1"
+        }, {
+          "timestamp" : "2024-12-05T00:27:20.685774909+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:29:30.942082426+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:29:49.890360933+01:00",
+          "event" : "READ",
+          "action" : "User kaouther@gmail.com performed READ operation: fetching product with ID 7"
+        } ],
+        "operationCount" : 14
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-04T21:00:45.258278937+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User kaouther@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:24:49.604325878+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User kaouther@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:27:16.845457049+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User kaouther@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:29:40.795638957+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User kaouther@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 4
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:25:27.057719954+01:00",
+          "event" : "WRITE",
+          "action" : "User kaouther@gmail.com performed DELETE operation: deleting product with ID 674799db05f4561782978e4c"
+        }, {
+          "timestamp" : "2024-12-05T00:25:58.627235474+01:00",
+          "event" : "WRITE",
+          "action" : "User kaouther@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung Z Fold 3, price=980.0, expirationDate=2030-11-15)"
+        }, {
+          "timestamp" : "2024-12-05T00:26:55.450903742+01:00",
+          "event" : "WRITE",
+          "action" : "User kaouther@gmail.com performed WRITE operation: updating product Product(id=6750e506574e696e930951c1, name=Samsung Z Fold 2, price=989.0, expirationDate=2029-12-30)"
+        } ],
+        "operationCount" : 3
+      }
+    },
+    "summary" : {
+      "READ" : 14,
+      "MOST_EXPENSIVE_SEARCH" : 4,
+      "WRITE" : 3
+    },
+    "totalOperationCount" : 21
+  }, {
+    "user" : "saida@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:06:43.168202452+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:06:45.49355171+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:06:51.471742849+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 8"
+        }, {
+          "timestamp" : "2024-12-05T01:07:14.205784743+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 1"
+        }, {
+          "timestamp" : "2024-12-05T01:07:20.521435549+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:08:43.396618551+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 88"
+        }, {
+          "timestamp" : "2024-12-05T01:09:15.334745007+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:09:24.806303356+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 6750ef26574e696e930951ca"
+        }, {
+          "timestamp" : "2024-12-05T01:10:03.467644508+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:11:27.23148354+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 67479b0110e64050b380492d"
+        }, {
+          "timestamp" : "2024-12-05T01:11:34.123940737+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:12:24.649115719+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching product with ID 6750e76c574e696e930951c3"
+        }, {
+          "timestamp" : "2024-12-05T01:12:27.716473457+01:00",
+          "event" : "READ",
+          "action" : "User saida@gmail.com performed READ operation: fetching all products"
+        } ],
+        "operationCount" : 13
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:06:58.933808024+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User saida@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:07:04.216088346+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User saida@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:10:00.318161214+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User saida@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 3
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:08:02.263157951+01:00",
+          "event" : "WRITE",
+          "action" : "User saida@gmail.com performed WRITE operation: updating product Product(id=88, name=redmi note 8, price=90.0, expirationDate=2027-10-14)"
+        }, {
+          "timestamp" : "2024-12-05T01:09:10.536122416+01:00",
+          "event" : "WRITE",
+          "action" : "User saida@gmail.com performed WRITE operation: adding product Product(id=null, name=Hwawei P30, price=60.0, expirationDate=2027-11-14)"
+        }, {
+          "timestamp" : "2024-12-05T01:10:18.295153254+01:00",
+          "event" : "WRITE",
+          "action" : "User saida@gmail.com performed DELETE operation: deleting product with ID 6747994805f4561782978e4b"
+        }, {
+          "timestamp" : "2024-12-05T01:11:15.340692744+01:00",
+          "event" : "WRITE",
+          "action" : "User saida@gmail.com performed WRITE operation: updating product Product(id=67479b0110e64050b380492d, name=Samsung TV 1, price=910.0, expirationDate=2028-02-22)"
+        } ],
+        "operationCount" : 4
+      }
+    },
+    "summary" : {
+      "READ" : 13,
+      "MOST_EXPENSIVE_SEARCH" : 3,
+      "WRITE" : 4
+    },
+    "totalOperationCount" : 20
+  }, {
+    "user" : "yacine@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:54:45.538336088+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:54:50.764332808+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 5"
+        }, {
+          "timestamp" : "2024-12-05T00:55:28.441938497+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 4"
+        }, {
+          "timestamp" : "2024-12-05T00:55:40.982700244+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:56:48.0953414+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:57:23.001982948+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 2"
+        }, {
+          "timestamp" : "2024-12-05T00:57:31.599023981+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 1"
+        }, {
+          "timestamp" : "2024-12-05T00:57:36.263554332+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:59:17.217384626+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:59:23.095255303+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching product with ID 7"
+        }, {
+          "timestamp" : "2024-12-05T00:59:36.277775785+01:00",
+          "event" : "READ",
+          "action" : "User yacine@gmail.com performed READ operation: fetching all products"
+        } ],
+        "operationCount" : 11
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:57:09.041847332+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User yacine@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:57:13.462488836+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User yacine@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:58:18.863537231+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User yacine@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:59:31.731782402+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User yacine@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 4
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:55:22.107370469+01:00",
+          "event" : "WRITE",
+          "action" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=5, name=AirPods Pro 2, price=250.0, expirationDate=2026-06-07)"
+        }, {
+          "timestamp" : "2024-12-05T00:56:18.508918583+01:00",
+          "event" : "WRITE",
+          "action" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=3, name=iPad Air, price=600.0, expirationDate=2028-12-08)"
+        }, {
+          "timestamp" : "2024-12-05T00:56:40.985876137+01:00",
+          "event" : "WRITE",
+          "action" : "User yacine@gmail.com performed WRITE operation: adding product Product(id=null, name=Aipods 4, price=170.0, expirationDate=2027-08-07)"
+        }, {
+          "timestamp" : "2024-12-05T00:57:05.202116742+01:00",
+          "event" : "WRITE",
+          "action" : "User yacine@gmail.com performed DELETE operation: deleting product with ID 6747947505f4561782978e44"
+        }, {
+          "timestamp" : "2024-12-05T00:58:12.24021836+01:00",
+          "event" : "WRITE",
+          "action" : "User yacine@gmail.com performed WRITE operation: updating product Product(id=6, name=Apple TV 4K, price=1600.0, expirationDate=2033-12-18)"
+        } ],
+        "operationCount" : 5
+      }
+    },
+    "summary" : {
+      "READ" : 11,
+      "MOST_EXPENSIVE_SEARCH" : 4,
+      "WRITE" : 5
+    },
+    "totalOperationCount" : 20
+  }, {
+    "user" : "salah@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:13:18.214083723+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:13:22.59197942+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:13:28.390795326+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 10"
+        }, {
+          "timestamp" : "2024-12-05T01:13:35.823391558+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 88"
+        }, {
+          "timestamp" : "2024-12-05T01:13:52.307356442+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 4"
+        }, {
+          "timestamp" : "2024-12-05T01:14:28.687432214+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:14:43.228046973+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 6750f05c574e696e930951cb"
+        }, {
+          "timestamp" : "2024-12-05T01:15:07.907509304+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:16:02.77697523+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:16:12.666825792+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 6750f0bd574e696e930951cc"
+        }, {
+          "timestamp" : "2024-12-05T01:16:25.415024717+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:17:02.757300658+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:17:08.738047017+01:00",
+          "event" : "READ",
+          "action" : "User salah@gmail.com performed READ operation: fetching product with ID 4"
+        } ],
+        "operationCount" : 13
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:13:42.717249145+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User salah@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:13:45.293696791+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User salah@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:15:10.825654345+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User salah@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 3
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:14:20.710267018+01:00",
+          "event" : "WRITE",
+          "action" : "User salah@gmail.com performed WRITE operation: adding product Product(id=null, name=Geant G2, price=70.0, expirationDate=2029-10-14)"
+        }, {
+          "timestamp" : "2024-12-05T01:14:59.844967677+01:00",
+          "event" : "WRITE",
+          "action" : "User salah@gmail.com performed DELETE operation: deleting product with ID 6750f05c574e696e930951cb"
+        }, {
+          "timestamp" : "2024-12-05T01:15:57.780685306+01:00",
+          "event" : "WRITE",
+          "action" : "User salah@gmail.com performed WRITE operation: adding product Product(id=null, name=Geant G2, price=60.0, expirationDate=2026-10-14)"
+        }, {
+          "timestamp" : "2024-12-05T01:16:21.777380925+01:00",
+          "event" : "WRITE",
+          "action" : "User salah@gmail.com performed DELETE operation: deleting product with ID 6750f0bd574e696e930951cc"
+        } ],
+        "operationCount" : 4
+      }
+    },
+    "summary" : {
+      "READ" : 13,
+      "MOST_EXPENSIVE_SEARCH" : 3,
+      "WRITE" : 4
+    },
+    "totalOperationCount" : 20
+  }, {
+    "user" : "johndoe@example.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:21:24.493675463+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:21:26.324875829+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:21:28.341192105+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:21:33.681326568+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 1"
+        }, {
+          "timestamp" : "2024-12-05T01:21:39.104160503+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 2"
+        }, {
+          "timestamp" : "2024-12-05T01:21:44.573461415+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 3"
+        }, {
+          "timestamp" : "2024-12-05T01:21:51.371138328+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 4"
+        }, {
+          "timestamp" : "2024-12-05T01:22:43.444647854+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 4"
+        }, {
+          "timestamp" : "2024-12-05T01:22:46.557108352+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:23:20.705118093+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:23:35.704984165+01:00",
+          "event" : "READ",
+          "action" : "User johndoe@example.com performed READ operation: fetching product with ID 6750ef26574e696e930951ca"
+        } ],
+        "operationCount" : 11
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:22:09.186188805+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User johndoe@example.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:22:11.632292449+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User johndoe@example.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:22:14.704062784+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User johndoe@example.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:23:55.776504831+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User johndoe@example.com searched for the most expensive products"
+        } ],
+        "operationCount" : 4
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:21:56.716075951+01:00",
+          "event" : "WRITE",
+          "action" : "User johndoe@example.com performed DELETE operation: deleting product with ID 6"
+        }, {
+          "timestamp" : "2024-12-05T01:22:33.654368321+01:00",
+          "event" : "WRITE",
+          "action" : "User johndoe@example.com performed WRITE operation: adding product Product(id=null, name=Samsung s10, price=170.0, expirationDate=2029-12-18)"
+        }, {
+          "timestamp" : "2024-12-05T01:23:14.738643466+01:00",
+          "event" : "WRITE",
+          "action" : "User johndoe@example.com performed WRITE operation: updating product Product(id=6750f249574e696e930951cf, name=Samsung S10, price=175.0, expirationDate=2027-11-18)"
+        }, {
+          "timestamp" : "2024-12-05T01:23:49.752780859+01:00",
+          "event" : "WRITE",
+          "action" : "User johndoe@example.com performed DELETE operation: deleting product with ID 6750ef26574e696e930951ca"
+        } ],
+        "operationCount" : 4
+      }
+    },
+    "summary" : {
+      "READ" : 11,
+      "MOST_EXPENSIVE_SEARCH" : 4,
+      "WRITE" : 4
+    },
+    "totalOperationCount" : 19
+  }, {
+    "user" : "aya@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:42:39.186396774+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:42:49.286791327+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching product with ID 11"
+        }, {
+          "timestamp" : "2024-12-05T00:44:34.54437812+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:45:28.554254622+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:46:49.982394555+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching product with ID 8"
+        }, {
+          "timestamp" : "2024-12-05T00:47:21.991421861+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:52:03.060151208+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:52:10.795020645+01:00",
+          "event" : "READ",
+          "action" : "User aya@gmail.com performed READ operation: fetching product with ID 4"
+        } ],
+        "operationCount" : 8
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:43:26.40513305+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User aya@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:44:26.159383624+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User aya@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:47:55.583489951+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User aya@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 3
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:43:22.372824307+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=11, name=apple tv, price=1550.0, expirationDate=2035-11-14)"
+        }, {
+          "timestamp" : "2024-12-05T00:44:20.845481662+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=7, name=iMac 24, price=1300.0, expirationDate=2030-12-29)"
+        }, {
+          "timestamp" : "2024-12-05T00:45:18.479300883+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=9, name=Apple Pencil 2, price=129.0, expirationDate=2029-06-03)"
+        }, {
+          "timestamp" : "2024-12-05T00:46:18.063334361+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=8, name=Mac Mini, price=699.0, expirationDate=2029-08-07)"
+        }, {
+          "timestamp" : "2024-12-05T00:46:44.372808288+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed WRITE operation: updating product Product(id=8, name=Mac Mini, price=699.0, expirationDate=2028-06-03)"
+        }, {
+          "timestamp" : "2024-12-05T00:47:49.205510519+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed DELETE operation: deleting product with ID 67478e8705f4561782978e3f"
+        }, {
+          "timestamp" : "2024-12-05T00:49:05.422826862+01:00",
+          "event" : "WRITE",
+          "action" : "User aya@gmail.com performed DELETE operation: deleting product with ID 67478f1505f4561782978e41"
+        } ],
+        "operationCount" : 7
+      }
+    },
+    "summary" : {
+      "READ" : 8,
+      "MOST_EXPENSIVE_SEARCH" : 3,
+      "WRITE" : 7
+    },
+    "totalOperationCount" : 18
+  }, {
+    "user" : "wassim@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:00:36.026333705+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:00:41.111008759+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 9"
+        }, {
+          "timestamp" : "2024-12-05T01:00:51.234504614+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 4"
+        }, {
+          "timestamp" : "2024-12-05T01:02:57.191968832+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:03:18.160435994+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:03:31.357170063+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 6750edab574e696e930951c9"
+        }, {
+          "timestamp" : "2024-12-05T01:05:02.726595225+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:05:43.157936599+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:05:54.482382652+01:00",
+          "event" : "READ",
+          "action" : "User wassim@gmail.com performed READ operation: fetching product with ID 6750ed91574e696e930951c8"
+        } ],
+        "operationCount" : 9
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:00:46.518243659+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User wassim@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:00:57.229752521+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User wassim@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:03:36.393261772+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User wassim@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T01:03:41.373307173+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User wassim@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 4
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:01:54.661212401+01:00",
+          "event" : "WRITE",
+          "action" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=Condor P6 Pro, price=144.0, expirationDate=2027-12-17)"
+        }, {
+          "timestamp" : "2024-12-05T01:02:25.434448881+01:00",
+          "event" : "WRITE",
+          "action" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=sony Z2, price=550.0, expirationDate=2027-11-10)"
+        }, {
+          "timestamp" : "2024-12-05T01:02:51.671295357+01:00",
+          "event" : "WRITE",
+          "action" : "User wassim@gmail.com performed WRITE operation: adding product Product(id=null, name=sony Z3, price=570.0, expirationDate=2027-11-15)"
+        }, {
+          "timestamp" : "2024-12-05T01:03:13.097928633+01:00",
+          "event" : "WRITE",
+          "action" : "User wassim@gmail.com performed DELETE operation: deleting product with ID 6750ed72574e696e930951c7"
+        }, {
+          "timestamp" : "2024-12-05T01:05:40.269708278+01:00",
+          "event" : "WRITE",
+          "action" : "User wassim@gmail.com performed WRITE operation: updating product Product(id=6750ed91574e696e930951c8, name=Sony Z2, price=560.0, expirationDate=2036-12-14)"
+        } ],
+        "operationCount" : 5
+      }
+    },
+    "summary" : {
+      "READ" : 9,
+      "MOST_EXPENSIVE_SEARCH" : 4,
+      "WRITE" : 5
+    },
+    "totalOperationCount" : 18
+  }, {
+    "user" : "kawthar@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:17:58.487969902+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:18:01.598070572+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:18:04.124405359+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:18:07.002721533+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:18:13.461328129+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching product with ID 7"
+        }, {
+          "timestamp" : "2024-12-05T01:18:19.25734295+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching product with ID 7"
+        }, {
+          "timestamp" : "2024-12-05T01:18:50.28291257+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:19:03.251002258+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching product with ID 6750f161574e696e930951cd"
+        }, {
+          "timestamp" : "2024-12-05T01:19:53.642965553+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:20:20.463582128+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T01:20:35.14374553+01:00",
+          "event" : "READ",
+          "action" : "User kawthar@gmail.com performed READ operation: fetching all products"
+        } ],
+        "operationCount" : 11
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:21:00.608693112+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User kawthar@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 1
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T01:18:41.230274492+01:00",
+          "event" : "WRITE",
+          "action" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung S9, price=100.0, expirationDate=2027-12-10)"
+        }, {
+          "timestamp" : "2024-12-05T01:19:13.849952716+01:00",
+          "event" : "WRITE",
+          "action" : "User kawthar@gmail.com performed DELETE operation: deleting product with ID 6750f161574e696e930951cd"
+        }, {
+          "timestamp" : "2024-12-05T01:19:36.160126435+01:00",
+          "event" : "WRITE",
+          "action" : "User kawthar@gmail.com performed WRITE operation: updating product Product(id=6750f161574e696e930951cd, name=Samsung s9, price=100.0, expirationDate=2027-10-10)"
+        }, {
+          "timestamp" : "2024-12-05T01:20:14.985750701+01:00",
+          "event" : "WRITE",
+          "action" : "User kawthar@gmail.com performed WRITE operation: adding product Product(id=null, name=Samsung s9, price=100.0, expirationDate=2027-11-11)"
+        }, {
+          "timestamp" : "2024-12-05T01:20:30.170911352+01:00",
+          "event" : "WRITE",
+          "action" : "User kawthar@gmail.com performed DELETE operation: deleting product with ID 6750f1be574e696e930951ce"
+        } ],
+        "operationCount" : 5
+      }
+    },
+    "summary" : {
+      "READ" : 11,
+      "MOST_EXPENSIVE_SEARCH" : 1,
+      "WRITE" : 5
+    },
+    "totalOperationCount" : 17
+  }, {
+    "user" : "ayoub@gmail.com",
+    "operations" : {
+      "READ" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:33:16.623138449+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:33:21.850852795+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching product with ID 10"
+        }, {
+          "timestamp" : "2024-12-05T00:33:40.414014573+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:34:40.451446462+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching product with ID 6"
+        }, {
+          "timestamp" : "2024-12-05T00:36:17.302659686+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching all products"
+        }, {
+          "timestamp" : "2024-12-05T00:37:06.061950386+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching product with ID 6750e749574e696e930951c2"
+        }, {
+          "timestamp" : "2024-12-05T00:38:20.179433554+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching product with ID 6747817392e11c7f1cf780ac"
+        }, {
+          "timestamp" : "2024-12-05T00:39:44.351393031+01:00",
+          "event" : "READ",
+          "action" : "User ayoub@gmail.com performed READ operation: fetching all products"
+        } ],
+        "operationCount" : 8
+      },
+      "MOST_EXPENSIVE_SEARCH" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:33:36.721625574+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User ayoub@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:37:17.283920268+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User ayoub@gmail.com searched for the most expensive products"
+        }, {
+          "timestamp" : "2024-12-05T00:38:03.749350469+01:00",
+          "event" : "MOST_EXPENSIVE_SEARCH",
+          "action" : "User ayoub@gmail.com searched for the most expensive products"
+        } ],
+        "operationCount" : 3
+      },
+      "WRITE" : {
+        "operations" : [ {
+          "timestamp" : "2024-12-05T00:35:37.617005587+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=iPhone 14 pro, price=750.0, expirationDate=2030-08-04)"
+        }, {
+          "timestamp" : "2024-12-05T00:36:12.775848685+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed WRITE operation: adding product Product(id=null, name=iPhone 13 pro, price=590.0, expirationDate=2029-08-16)"
+        }, {
+          "timestamp" : "2024-12-05T00:36:56.977414365+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=6750e749574e696e930951c2, name=iPhone 14 pro, price=755.0, expirationDate=2029-06-16)"
+        }, {
+          "timestamp" : "2024-12-05T00:37:57.819075544+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=6747817392e11c7f1cf780ac, name=Apple Mac, price=1100.0, expirationDate=2030-12-12)"
+        }, {
+          "timestamp" : "2024-12-05T00:40:01.859372421+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed DELETE operation: deleting product with ID 6747948c05f4561782978e45"
+        }, {
+          "timestamp" : "2024-12-05T00:41:27.185807765+01:00",
+          "event" : "WRITE",
+          "action" : "User ayoub@gmail.com performed WRITE operation: updating product Product(id=10, name=MagSafe Charger, price=40.0, expirationDate=2029-11-17)"
+        } ],
+        "operationCount" : 6
+      }
+    },
+    "summary" : {
+      "READ" : 8,
+      "MOST_EXPENSIVE_SEARCH" : 3,
+      "WRITE" : 6
+    },
+    "totalOperationCount" : 17
+  } ]
+}

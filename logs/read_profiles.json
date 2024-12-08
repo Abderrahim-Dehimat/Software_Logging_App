@@ -1,8 +1,425 @@
 {
   "operation" : "READ",
   "profiles" : [ {
+    "user" : "abdou@gmail.com",
+    "operationCount" : 59,
+    "operations" : [ {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T20:54:23.051976287+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T20:55:23.663321825+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T20:55:38.680422312+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 5",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T21:18:35.037774694+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-04T21:19:06.364136668+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 6",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:19:45.46527216+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:20:01.576648007+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 6750e36c574e696e930951bf",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:21:59.578396188+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 10",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:22:05.046600282+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 11",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:22:45.145349285+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-05T00:52:46.184011665+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:05:43.487081862+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:05:58.525406129+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:06:10.504642222+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 8",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:06:46.547986516+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:06:55.279825885+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 8",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:08:04.056531649+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:08:17.316122237+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 88",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:20:12.379424988+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:26:08.321213332+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:27:23.113864151+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:28:25.279799954+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:28:36.532091037+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:29:13.20348585+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:29:21.793029821+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:29:54.343985696+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:30:11.887876786+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:30:29.626618913+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:30:34.568943663+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:30:38.861923863+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 1",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:31:09.61659086+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:31:22.477622752+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:31:26.791467243+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:38:15.900420034+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:38:27.448895176+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 4",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:39:03.632037283+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:39:08.622723284+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:40:44.326818748+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:41:10.310206869+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:41:25.377631756+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:52:51.015263626+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:53:50.595676461+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:54:04.561562029+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:54:29.423736206+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:54:51.131359934+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:55:05.273985653+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-07T21:56:33.665639189+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:17:06.205566004+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:17:10.678465826+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:23:19.346626514+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-3",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:25:17.742125246+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:27:57.802208458+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-8",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:30:57.792596942+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T18:31:09.769286552+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T19:03:32.344227842+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T19:07:00.753104529+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T19:11:00.487849375+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-4",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T19:12:35.671232459+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 7",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "abdou@gmail.com",
+      "@timestamp" : "2024-12-08T19:34:51.271361574+01:00",
+      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-6",
+      "level" : "INFO"
+    } ]
+  }, {
     "user" : "kaouther@gmail.com",
-    "operationCount" : 14,
+    "operationCount" : 16,
     "operations" : [ {
       "user" : "kaouther@gmail.com",
       "@timestamp" : "2024-12-04T20:53:07.202746418+01:00",
@@ -100,6 +517,20 @@
       "message" : "User kaouther@gmail.com performed READ operation: fetching product with ID 7",
       "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
       "thread_name" : "http-nio-8080-exec-10",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-08T18:06:18.644659076+01:00",
+      "message" : "User kaouther@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
+      "level" : "INFO"
+    }, {
+      "user" : "kaouther@gmail.com",
+      "@timestamp" : "2024-12-08T19:15:55.047124441+01:00",
+      "message" : "User kaouther@gmail.com performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-1",
       "level" : "INFO"
     } ]
   }, {
@@ -371,87 +802,6 @@
       "message" : "User johndoe@example.com performed READ operation: fetching product with ID 6750ef26574e696e930951ca",
       "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
       "thread_name" : "http-nio-8080-exec-9",
-      "level" : "INFO"
-    } ]
-  }, {
-    "user" : "abdou@gmail.com",
-    "operationCount" : 11,
-    "operations" : [ {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-04T20:54:23.051976287+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-5",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-04T20:55:23.663321825+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-7",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-04T20:55:38.680422312+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 5",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-8",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-04T21:18:35.037774694+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-2",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-04T21:19:06.364136668+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 6",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-4",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:19:45.46527216+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-8",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:20:01.576648007+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 6750e36c574e696e930951bf",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-9",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:21:59.578396188+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 10",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-5",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:22:05.046600282+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 11",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-6",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:22:45.145349285+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching product with ID 14",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-8",
-      "level" : "INFO"
-    }, {
-      "user" : "abdou@gmail.com",
-      "@timestamp" : "2024-12-05T00:52:46.184011665+01:00",
-      "message" : "User abdou@gmail.com performed READ operation: fetching all products",
-      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
-      "thread_name" : "http-nio-8080-exec-5",
       "level" : "INFO"
     } ]
   }, {
@@ -801,6 +1151,31 @@
       "message" : "User ayoub@gmail.com performed READ operation: fetching all products",
       "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
       "thread_name" : "http-nio-8080-exec-2",
+      "level" : "INFO"
+    } ]
+  }, {
+    "user" : "",
+    "operationCount" : 3,
+    "operations" : [ {
+      "user" : "",
+      "@timestamp" : "2024-12-07T20:59:57.398312736+01:00",
+      "message" : "User  performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-7",
+      "level" : "INFO"
+    }, {
+      "user" : "",
+      "@timestamp" : "2024-12-07T21:00:08.220339876+01:00",
+      "message" : "User  performed READ operation: fetching product with ID 2",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-9",
+      "level" : "INFO"
+    }, {
+      "user" : "",
+      "@timestamp" : "2024-12-07T21:05:05.955954526+01:00",
+      "message" : "User  performed READ operation: fetching all products",
+      "logger_name" : "com.example.softwareloggingapp.controller.ProductController",
+      "thread_name" : "http-nio-8080-exec-5",
       "level" : "INFO"
     } ]
   } ]
